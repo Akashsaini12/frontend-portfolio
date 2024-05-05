@@ -1,0 +1,629 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Gilroy;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #f5f3ef;
+    }
+
+    /*---- Nav-Section Start ----*/
+
+    #nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 38px;
+        position: fixed;
+    }
+
+    #nav h3 {
+        font-size: 20px;
+        color: white;
+        margin-left: 5px;
+        background-color: black;
+        padding: 15px 25px;
+        border-radius: 50px;
+    }
+    /*---- Nav-Section End ----*/
+
+    /*---- Intro-Section Start ----*/
+
+    #intro {
+        width: 100%;
+        height: 60%;
+        padding: 64px;
+        margin-bottom: 25px;
+    }
+
+    #intro h1 {
+        font-size: 150px;
+        font-weight: 600;
+        line-height: 142px;
+        letter-spacing: -5px;
+        padding-bottom: 10px;
+    }
+
+    /*---- Place-Section Start ----*/
+
+    #place {
+        width: 100%;
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #place h4 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+       /*- Place-Section End -*/
+
+    /*---- Intro-Section End ----*/
+
+    /*---- About-Section Start ----*/
+
+    .hero-image {
+        height: 90%;
+        width: 100%;
+    }
+
+    .images {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        position: relative;
+    }
+
+    .image-noise img {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        opacity: .2;
+        position: absolute;
+        object-fit:cover;
+    }
+    /*---- Hero-Section End ----*/
+
+    /*---- About-Section Start ----*/
+
+    .about {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 64px 64px;
+    }
+
+    #about-part1 {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #about-part1 h1 {
+        font-size: 89px;
+        font-weight: 550;
+        line-height: 88px;
+        letter-spacing: -4px;
+        
+    }
+
+    #about-part2 {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 60px;
+    }
+
+    #about-part2 h3 {
+        font-size: 32px;
+    }
+
+    #about-icons i {
+        font-size: 25px;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 50px;
+        color: white;
+        background-color: black;
+    }
+    /*---- About-Section End ----*/
+
+    /*---- Work-Section Start ----*/
+
+    #work {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        padding: 64px 64px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #work1 {
+        width: 33%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #work1 h3 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    #work1 i {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    #work2 {
+        height: 100%;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .work2-part {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .work2-vertical-div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 66px;
+        position: relative;
+    }
+
+    /* Animated-vertical- line */
+    .work2-vertical-line {
+        height: 100%;
+        border: 1px solid black;
+        animation-name: work2VarLine;
+        position: absolute;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes work2VarLine {
+        0% {
+            height: 0;
+            top: 0;
+        }
+
+        100% {
+            height: 100%;
+            top: 0;
+        }
+    }
+
+    /* Animated-horizental- line */
+    .work2-horizental-div {
+        width: 100%;
+        margin: 66px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .work2-horizental-line {
+        width: 100%;
+        border: 1px solid black;
+        animation-name: work2HoriLine;
+        position: absolute;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes work2HoriLine {
+        0% {
+            width: 0;
+            left: 0;
+        }
+
+        100% {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .skill h4 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .skill p {
+        font-size: 19px;
+        color: rgba(69, 69, 69, 0.925);
+        line-height: 26px;
+    }
+
+    /*---- Work-Section End ----*/
+
+
+    /*---- Work-Strip-Start ----*/
+
+    #work-strip {
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    #work-strip h1 {
+        font-size: 165px;
+        font-weight: 600;
+        word-spacing: -12px;
+    }
+
+    #work-strip h1::-webkit-scrollbar{
+        display: none;
+    }
+    /*---- Work-Strip-End ----*/
+
+
+    /*---- Features-Section Start ----*/
+
+    .features {
+        height: 34%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 64px 64px;
+    }
+
+    .item {
+        width: 40%;
+        height: 100%;
+        font-size: 70px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        letter-spacing: -6px;
+    }
+
+    .details {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .details-part1 p {
+        font-size: 21px;
+        color: rgba(83, 81, 81, 0.902);
+        font-weight: 500;
+        line-height: 32px;
+        opacity: 1.5px;
+    }
+
+    .details-part2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .details-part2 h4 {
+        font-size: 14px;
+        color: white;
+        background-color: black;
+        padding: 8px 14px;
+        border-radius: 30px;
+    }
+    /*---- Features-Section End ----*/
+
+
+    /*---- Clients-section Start ----*/
+
+    #clients-sec {
+        height: 150%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 55px;
+        position: relative;
+    }
+
+    #section1 {
+        width: 35%;
+        height: 100%;
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #content h3 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    #content i {
+        font-size: 35px;
+        font-weight: 600;
+        padding-right: 30px;
+    }
+
+    #section2 {
+        height: 100%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    .sub-section {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .client-card {
+        width: 37%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .head-sec h4 {
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    .para-sec p {
+        font-size: 19px;
+        color: rgba(69, 69, 69, 0.925);
+        line-height: 25px;
+    }
+
+    .bottom-sec {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .profile img {
+        object-fit: cover;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .name h4 {
+        font: 46px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .name .username {
+        color: rgba(97, 97, 97, 0.952);
+        margin-top: 5px;
+    }
+
+
+    .vertical-line {
+        height: 85%;
+        border: 1px solid black;
+        animation-name: verticalline;
+        animation-duration: 2s;
+        position: absolute;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    #sec1-vertical-div {
+        height: 100%;
+        width: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes verticalline {
+        0% {
+            height: 0%;
+            top: 7.5%;
+        }
+
+        100% {
+            height: 85%;
+            top: 7.5%;
+        }
+    }
+    .repeat-horizental-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid red;
+        height: 5px;
+        justify-content: center;
+    }
+    .horizental-line {
+        width: 92%;
+        border: 1px solid black;
+        animation-name: horizentalline;
+        animation-duration: 2s;
+        position: absolute;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    @keyframes horizentalline {
+        0% {
+            width: 0%;
+            left: 4%;
+        }
+
+        100% {
+            width: 92%;
+            left: 4%;
+        }
+    }
+    /* ----Clients-section End ----*/
+
+    /*---- Footer-Section Start ----*/
+
+    .footer {
+        height: 140%;
+        width: 100%;
+        color: #f5f3ef;
+        background-color: #1e1e21;
+    }
+
+    #ftr-part1 {
+        height: 52%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ftr-part1 h3 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    #ftr-part1 h1 {
+        font-size: 140px;
+        letter-spacing: -6px;
+        margin-top: 10px;
+    }
+
+    .footer-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .ftr-btn {
+        color: black;
+        background: white;
+        font-weight: 700;
+        padding: 14px 24px;
+        border-radius: 30px;
+    }
+
+    #ftr-part2 {
+        height: 38%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .part2-sub-sec {
+        width: 28%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 30px 5px;
+    }
+
+    .part2-sub-sec h3 {
+        margin-bottom: 10px;
+        color: #bcbcbc;
+    }
+
+    .part2-sub-sec a {
+        position: relative;
+    }
+
+    .part2-sub-sec a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1.4px;
+        margin-top: 1px;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+    }
+
+    .part2-sub-sec a:hover::after {
+        
+        animation-name: animatedline;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animatedline {
+        0% {
+            width: 0%;
+            left: 0;
+        }
+
+        100% {
+            width: 100%;
+            left: 0%;
+        }
+    }
+
+    #ftr-part3 {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ftr-part3 h3 {
+        font-size: 18px;
+        letter-spacing: .5px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    /*---- Footer-Section Start ----*/
